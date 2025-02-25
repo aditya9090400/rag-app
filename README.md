@@ -38,17 +38,7 @@ DATABASE_URL = "postgresql+asyncpg://user:password@localhost/db_name"
 ```
 Replace `user`, `password`, and `db_name` accordingly.
 
-### 4. Create Database Tables
-Run Alembic migrations:
-```sh
-alembic upgrade head
-```
-Or, manually create tables:
-```sh
-python create_tables.py
-```
-
-### 5. Start FastAPI Server
+### 4. Start FastAPI Server
 ```sh
 uvicorn app.main:app --reload
 ```
